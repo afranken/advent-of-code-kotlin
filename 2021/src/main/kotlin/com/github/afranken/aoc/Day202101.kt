@@ -5,10 +5,8 @@ package com.github.afranken.aoc
  * https://adventofcode.com/2021/day/1
  */
 object Day202101 {
-    /**
-     * Implements Part1 of the Day1 puzzle.
-     */
-    fun computePart1(inputs: Array<Int>): Int {
+
+    fun part1(inputs: Array<Int>): Int {
         var increases = 0
         var lastnumber = -1
         for (i in inputs.indices) {
@@ -21,7 +19,7 @@ object Day202101 {
         return increases
     }
 
-    fun computePart2(inputs: Array<Int>): Int {
+    fun part2(inputs: Array<Int>): Int {
         var increases = 0
         var lastnumber = -1
         for (i in 2 until inputs.size) {
