@@ -42,7 +42,7 @@ object Day202101Test {
     val input: Array<Int>
         get() {
             val input =
-                Day202101Test::class.java.classLoader.getResource("com/github/afranken/aoc/input.txt")
+                Day202101Test::class.java.classLoader.getResource("com/github/afranken/aoc/Day202101-input.txt")
             val lines: MutableList<Int> = mutableListOf()
             File(input.toURI()).forEachLine { lines.add(Integer.valueOf(it)) }
             return lines.toTypedArray()
