@@ -1,4 +1,4 @@
-package com.github.afranken.day202101
+package com.github.afranken.aoc
 
 /**
  * This implements the answer to Day 2021/12/01

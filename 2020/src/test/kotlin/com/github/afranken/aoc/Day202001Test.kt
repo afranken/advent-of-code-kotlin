@@ -1,7 +1,7 @@
-package com.github.afranken.day202001
+package com.github.afranken.aoc
 
-import com.github.afranken.day202001.Day202001.NOT_FOUND
-import com.github.afranken.day202001.Day202001.computePart1
+import com.github.afranken.aoc.Day202001.NOT_FOUND
+import com.github.afranken.aoc.Day202001.computePart1
 import org.assertj.core.api.Assertions.assertThat
 import java.io.File
 import java.io.IOException
@@ -37,7 +37,7 @@ object Day202001Test {
     val input: Array<Int>
         get() {
             val input =
-                Day202001Test::class.java.classLoader.getResource("com/github/afranken/day202001/input.txt")
+                Day202001Test::class.java.classLoader.getResource("com/github/afranken/aoc/input.txt")
             val lines: MutableList<Int> = mutableListOf()
             File(input.toURI()).forEachLine { lines.add(Integer.valueOf(it)) }
             return lines.toTypedArray()
