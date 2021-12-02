@@ -12,7 +12,7 @@ object Day202001 {
      * This is an optimized twoSum with only one pass-through of the incoming Array/List, making
      * this a O(N) runtime while trading for memory
      */
-    fun computePart1(inputs: Array<Int>, target: Int): Int {
+    fun part1(inputs: Array<Int>, target: Int): Int {
         val lookupTable = HashMap<Int, Int>()
         for (i in inputs.indices) {
             val input = inputs[i]
