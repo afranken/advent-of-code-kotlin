@@ -42,7 +42,7 @@ internal class Day202102Test {
     val input: Array<String>
         get() {
             val input =
-                Day202101Test::class.java.classLoader.getResource("com/github/afranken/aoc/Day202102-input.txt")
+                Day202102Test::class.java.classLoader.getResource("com/github/afranken/aoc/Day202102-input.txt")
             return File(input.toURI()).readLines().toTypedArray()
         }
 }
