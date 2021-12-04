@@ -24,12 +24,12 @@ internal class Day202103Test {
     @Test
     fun testPart2Example() {
         val result = Day202103.part2(AOC_EXAMPLE_INPUT)
-        assertThat(result).isEqualTo(1)
+        assertThat(result).isEqualTo(230)
     }
 
     @Test
     fun testPart2Input() {
         val result = Day202103.part2(input)
-        assertThat(result).isEqualTo(1)
+        assertThat(result).isEqualTo(1353024)
     }
 }
