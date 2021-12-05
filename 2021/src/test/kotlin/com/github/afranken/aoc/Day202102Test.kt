@@ -2,9 +2,6 @@ package com.github.afranken.aoc
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
-import java.io.File
-import java.io.IOException
-import java.net.URISyntaxException
 
 internal class Day202102Test {
     private val AOC_EXAMPLE_INPUT = arrayOf("forward 5",
@@ -13,6 +10,7 @@ internal class Day202102Test {
             "up 3",
             "down 8",
             "forward 2")
+    private val input: Array<String> get() {return getInput("com/github/afranken/aoc/Day202102-input.txt")}
 
     @Test
     fun testPart1Example() {
@@ -37,12 +35,4 @@ internal class Day202102Test {
         val result = Day202102.part2(input)
         assertThat(result).isEqualTo(2044620088)
     }
-
-    @get:Throws(URISyntaxException::class, IOException::class)
-    val input: Array<String>
-        get() {
-            val input =
-                Day202102Test::class.java.classLoader.getResource("com/github/afranken/aoc/Day202102-input.txt")
-            return File(input.toURI()).readLines().toTypedArray()
-        }
 }
