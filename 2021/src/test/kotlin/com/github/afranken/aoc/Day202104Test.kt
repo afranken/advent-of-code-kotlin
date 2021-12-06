@@ -1,0 +1,56 @@
+package com.github.afranken.aoc
+
+import org.assertj.core.api.Assertions
+import org.junit.jupiter.api.Test
+
+internal class Day202104Test {
+    private val AOC_EXAMPLE_INPUT = arrayOf(
+        "7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,19,3,26,1",
+        "",
+        "22 13 17 11  0",
+        "8  2 23  4 24",
+        "21  9 14 16  7",
+        "6 10  3 18  5",
+        "1 12 20 15 19",
+        "",
+        "3 15  0  2 22",
+        "9 18 13 17  5",
+        "19  8  7 25 23",
+        "20 11 10 24  4",
+        "14 21 16 12  6",
+        "",
+        "14 21 17 24  4",
+        "10 16 15  9 19",
+        "18  8 23 26 20",
+        "22 11 13  6  5",
+        "2  0 12  3  7"
+    )
+    private val input: Array<String>
+        get() {
+            return getInput("com/github/afranken/aoc/Day202104-input.txt")
+        }
+
+    @Test
+    fun testPart1Example() {
+        val result = Day202104.part1(AOC_EXAMPLE_INPUT)
+        Assertions.assertThat(result).isEqualTo(4512)
+    }
+
+    @Test
+    fun testPart1Input() {
+        val result = Day202104.part1(input)
+        Assertions.assertThat(result).isEqualTo(67716)
+    }
+
+    @Test
+    fun testPart2Example() {
+        val result = Day202104.part2(AOC_EXAMPLE_INPUT)
+        Assertions.assertThat(result).isEqualTo(1924)
+    }
+
+    @Test
+    fun testPart2Input() {
+        val result = Day202104.part2(input)
+        Assertions.assertThat(result).isEqualTo(1830)
+    }
+}
